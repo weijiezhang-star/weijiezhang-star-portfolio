@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+      name="viewport"
+    />
+    <meta content="#000" name="theme-color" />
+    <link href="asset/css/style.css" rel="stylesheet" />
+    <title>Carlos Lee | Full Stack Developer</title>
+    <meta content="index, follow" name="robots" />
+    <meta content="website" property="og:type" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    />
+    <script src="/asset/js/fa.js"></script>
+    <meta
+      content="BsRcrQH_YwBW4zyBT2AexW2QIhoXcLCrtPoTWpZr7Bg"
+      name="google-site-verification"
+    />
+    <link href="/img/Carlos Lee.jpg" rel="shortcut icon" type="image/x-icon" />
+    <meta content="Paul Storm | Full Stack Developer" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta content="https://adithyapai.com" property="og:url" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body data-offset="50" data-spy="scroll" data-target=".navbar">
+    <div id="preloader">
+      <div class="spinner-grow text-primary"></div>
+      <div class="spinner-grow text-warning"></div>
+      <div class="spinner-grow text-danger"></div>
+    </div>
+
+    <div class="page1" id="home">
+      <p class="typed"></p>
+      <div class="scroll-down">
+        <div>
+          <img src="/img/mouse-scroll.png" alt="Scroll Down" />
+        </div>
+        <span class="mt-2">Scroll Down</span>
+      </div>
+    </div>
+
+    <nav class="uc navbar navbar-expand-lg sticky-top">
+      <a
+        href="https://adithyapai.com"
+        rel="noreferrer"
+        class="uc navbar-brand"
+        style="font-size: 2.5em"
+        >Carlos Lee</a
+      ><button
+        type="button"
+        class="ml-auto navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        data-target="#navbarNav"
+        data-toggle="collapse"
+      >
+        <span class="navbar-toggler-icon"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="ml-auto navbar-nav">
+          <li class="uc nav-item">
+            <a href="#home" rel="noreferrer" class="nav-link">Home</a>
+          </li>
+          <li class="uc nav-item">
+            <a href="#about" rel="noreferrer" class="nav-link">About</a>
+          </li>
+          <li class="uc nav-item">
+            <a href="#skills" rel="noreferrer" class="nav-link">Skills</a>
+          </li>
+          <!-- <li class="uc nav-item">
+            <a href="#social" rel="noreferrer" class="nav-link">Social</a>
+          </li> -->
+          <li class="uc nav-item">
+            <a href="#projects" rel="noreferrer" class="nav-link">Project</a>
+          </li>
+          <li class="uc nav-item">
+            <a href="#contact" rel="noreferrer" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dmb"><i class="fa fa-adjust" onclick="darkmode()"></i></div>
+    </nav>
+
+    <div class="about">
+      <div
+        class="slid slid1"
+        id="about"
+        data-aos="zoom-in-right"
+        data-aos-duration="800"
+      >
+        <div class="box box1">
+          <div class="title"><i class="fa fa-user"></i> About Me</div>
+          <div class="adithya">
+            <img alt="Adithya Pai" src="/img/Carlos Lee.jpg" class="img" />
+          </div>
+          <div class="content">
+            <p></p>
+            <p>
+              Hi there! I am <b style="color: #3e69c3">Carlos Lee</b> from 56
+              Lengkok Bahru,
+              <img
+                alt="Singapore-flag"
+                src="./img/singapore-flag.jpg"
+                height="30px"
+              />
+            </p>
+            an enthusiastic person with a passion for technology and a keen
+            <br />
+            interest in pursuing a career in the field of DevOps and Backend
+            Engineering.
+            <br />
+            I like to explore new technologies, attend tech talks, and
+            participate in hackathons to stay up-to-date with the latest trends
+            and advancements in the field.
+            <p>
+              <button type="submit" class="learn-more">
+                <a
+                  href="./resume/resume.pdf"
+                  target="_blank"
+                  style="color: #fff; outline: 0; text-decoration: none"
+                  >Resume</a
+                >
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="slid slid2"
+        id="skills"
+        data-aos="zoom-in-up"
+        data-aos-duration="800"
+      >
+        <div class="box box2">
+          <div class="title" style="font-size: 3em">
+            <img width="50" alt="skills" src="./img/skill-white-icon.png" />
+            Skills
+          </div>
+          <div class="content">
+            <div class="web">
+              <div class="title">
+                <img
+                  alt="web"
+                  src="https://img.icons8.com/color/30/000000/internet.png"
+                />
+                <b>Front End Development </b>
+              </div>
+              <div class="container web-body">
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/html-5--v1.png"
+                      alt="html5-icon"
+                    />
+                  </li>
+                  <li>HTML5</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/css3.png"
+                      alt="CSS3-icon"
+                    />
+                  </li>
+                  <li>CSS3</li>
+                </ul>
+                <ul>
+                  <li>
+                    <img
+                      src="https://img.icons8.com/color/48/sass.png"
+                      alt="Sass-icon"
+                    />
+                  </li>
+                  <li>SASS</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="Bootstrap icon"
+                      src="https://img.icons8.com/color/48/000000/bootstrap.png"
+                    />
+                  </li>
+                  <li>Bootstrap</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/tailwind_css.png"
+                      alt="tailwind_css"
+                    />
+                  </li>
+                  <li>Tailwind CSS</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/material-ui.png"
+                      alt="material-ui"
+                    />
+                  </li>
+                  <li>Material UI</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/javascript--v1.png"
+                      alt="javascript"
+                    />
+                  </li>
+                  <li>Javascript</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="jQuery icon"
+                      src="https://img.icons8.com/ios-filled/50/000000/jquery.png"
+                      style="background: #fff; border-radius: 50%"
+                    />
+                  </li>
+
+                  <li>jQuery</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="Typescript icon"
+                      src="https://img.icons8.com/color/48/000000/typescript.png"
+                    />
+                  </li>
+                  <li>TypeScript</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="json icon"
+                      src="https://img.icons8.com/color/48/000000/json--v1.png"
+                    />
+                  </li>
+                  <li>JSON</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/angularjs.png"
+                      alt="angularjs"
+                    />
+                  </li>
+                  <li>Angular</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                      alt="React"
+                      width="48"
+                      height="48"
+                    />
+                  </li>
+                  <li>React</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/vue-js.png"
+                      alt="vue-js"
+                    />
+                  </li>
+                  <li>Vue.js</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/git.png"
+                      alt="git"
+                    />
+                  </li>
+                  <li>Git</li>
+                </ul>
+              </div>
+              <div class="title">
+                <img
+                  alt="Code icon"
+                  src="https://img.icons8.com/fluent/30/000000/code.png"
+                />
+                <b>Back End Development </b>
+              </div>
+              <div class="container web-body">
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/nodejs.png"
+                      alt="nodejs"
+                    />
+                  </li>
+                  <li>NodeJs</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="Express icon"
+                      src="https://img.icons8.com/color/48/000000/express.png"
+                    />
+                  </li>
+                  <li>Express</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="PHP icon"
+                      src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                    />
+                  </li>
+                  <li>PHP</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="./img/icons8-laravel-100.png"
+                      alt="laravel"
+                    />
+                  </li>
+                  <li>Laravel</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="python icon"
+                      src="https://img.icons8.com/color/48/000000/python.png"
+                    />
+                  </li>
+                  <li>Python3</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/django.png"
+                      alt="django"
+                    />
+                  </li>
+                  <li>Django</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      width="50"
+                      height="50"
+                      src="./img/github-mark-white.png"
+                      alt="github--v1"
+                    />
+                  </li>
+                  <li>GitHub</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="MYSQL icon"
+                      src="https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo-500x313.png"
+                    />
+                  </li>
+                  <li>My SQL</li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <img
+                      alt="MongoDB icon"
+                      src="https://img.icons8.com/color/48/000000/mongodb.png"
+                    />
+                  </li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div
+        class="slid slid3"
+        id="social"
+        data-aos="zoom-in-left"
+        data-aos-duration="800"
+      >
+        <div class="box box3">
+          <div class="title">
+            Social
+            <img
+              alt="network icon"
+              src="https://img.icons8.com/officel/30/000000/network-cable.png"
+            />
+          </div>
+          <div class="container social">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/adithyapaib"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    alt="github"
+                    src="https://img.icons8.com/ios-glyphs/60/000000/github.png"
+                    style="background: #fff; border-radius: 500%"
+                /></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://linkedin.com/in/adithyapaib "
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    alt="linkedin"
+                    src="https://img.icons8.com/fluent/65/000000/linkedin.png"
+                /></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://twitter.com/adithyapaib"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    alt="twitter"
+                    src="https://img.icons8.com/color/60/000000/twitter.png "
+                /></a>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:paiadithya26@gmail.com"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    alt="gmail"
+                    src="https://img.icons8.com/color/60/000000/gmail.png"
+                /></a>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:admin@adithyapai.com"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    alt="email"
+                    src="https://img.icons8.com/color/60/000000/email-sign.png"
+                /></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.cloudskillsboost.google/public_profiles/c0ba85ed-f46a-4470-af0c-c6f68bb14e8a"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    alt="telegram"
+                    src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/60/000000/external-qwiklabs-provides-real-cloud-environments-that-help-developers-logo-shadow-tal-revivo.png"
+                /></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://hub.docker.com/u/adithyapaib"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><img
+                    alt="email"
+                    src="https://img.icons8.com/fluency/48/000000/docker.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="fdiv" data-aos="fade-up" data-aos-duration="1500">
+      <div class="title container-fluid">
+        Here's something satisfying, Hover over the Spinner!
+      </div>
+      <div class="wrapper">
+        <div class="fidget">
+          <div class="limb"></div>
+          <div class="limb"></div>
+          <div class="limb"></div>
+          <div class="middle"></div>
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="conatiner projects"
+      id="projects"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div class="conatiner title">
+        Projects
+        <img
+          alt="project"
+          src="https://img.icons8.com/fluent/30/000000/tasks.png"
+        />
+      </div>
+      <div class="conatiner project-card s1">
+        <div class="img"></div>
+        <div class="site">Replit</div>
+        <div class="decription">
+          Build software collaboratively with the power of AI, on any device,
+          without spending a second on setup
+          <div class="btn">
+            <a href="https://replit.com/" rel="noreferrer" target="_blank"
+              >Visit now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="conatiner project-card s2">
+        <div class="img"></div>
+        <div class="site">sunnygreen</div>
+        <div class="decription">
+          Take your solar installation business to new heights with SunnyGreen,
+          a wholesale partner who will cut your costs dramatically in a
+          risk-free manner.
+          <div class="btn">
+            <a href="https://sunnygreen.co.uk/" rel="noreferrer" target="_blank"
+              >Visit now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="conatiner project-card s3">
+        <div class="img"></div>
+        <div class="site">airtable</div>
+        <div class="decription">
+          Transform your business with Airtable's next-gen app platform.
+          Unmatched agility and efficiency.
+          <div class="btn">
+            <a href="https://www.airtable.com/" rel="noreferrer" target="_blank"
+              >Visit now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="conatiner project-card s4">
+        <div class="img"></div>
+        <div class="site">ICL</div>
+        <div class="decription">
+          ICL supports companies in their cultural evolution and designs custom
+          interventions for corporate learning.
+          <div class="btn">
+            <a href="https://icl.berlin/" rel="noreferrer" target="_blank"
+              >Visit now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="conatiner project-card s5">
+        <div class="img"></div>
+        <div class="site">akaunting</div>
+        <div class="decription">
+          Akaunting is a free, open-source, and online accounting software for
+          small businesses and freelancers.
+          <div class="btn">
+            <a href="https://akaunting.com/" rel="noreferrer" target="_blank"
+              >Visit now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="conatiner project-card s6">
+        <div class="img"></div>
+        <div class="site">tutorful</div>
+        <div class="decription">
+          Our mission is to help anyone find their perfect tutor so they can
+          achieve their learning goals.
+          <div class="btn">
+            <a href="https://tutorful.co.uk/" rel="noreferrer" target="_blank"
+              >Visit now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="conatiner form border"
+      id="contact"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div class="title">Contact Me</div>
+      <form action="https://formsubmit.co/el/decapo" method="POST" class="mt-5">
+        <label for="name">Name</label><br />
+        <input name="name" id="name" required /><br />
+
+        <label for="email">Email</label><br />
+        <input
+          name="email"
+          type="email"
+          id="email"
+          inputmode="email"
+          required
+        /><br />
+
+        <label for="phone">Phone</label><br />
+        <input name="phone" type="tel" id="phone" inputmode="tel" /><br />
+
+        <label for="message">Message</label><br />
+        <textarea
+          class="form-control"
+          id="message"
+          name="message"
+          required
+          rows="4"
+        ></textarea>
+
+        <div class="btn"><button id="submi" type="submit">Submit</button></div>
+        <input
+          name="_next"
+          type="hidden"
+          value="https://adithyapai.com/thanks.html"
+        />
+        <input name="_captcha" type="hidden" value="false" />
+      </form>
+    </div>
+    <footer>
+      <p>
+        Made with
+        <img
+          alt="heart icon"
+          src="https://img.icons8.com/color/28/000000/hearts.png"
+        />
+        by
+        <b style="color: #3e69c3">
+          <a href="#" rel="noreferrer" style="text-decoration: none"
+            >Carlos Lee
+          </a>
+        </b>
+      </p>
+    </footer>
+    <script src="asset/js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/asset/js/popper.min.js"></script>
+    <script src="/asset/js/bootstrap.min.js"></script>
+    <script src="/asset/js/wow.js"></script>
+    <script src="/asset/js/three.min.js"></script>
+    <script src="/asset/js/typed.js"></script>
+    <script src="./asset/js/fullpage.min.js"></script>
+    <script src="./asset/js/scrolloverflow.js"></script>
+    <script src="asset/js/script.js"></script>
+    <a
+      href="https://icons8.com/icon/gw0hsLOeK_OO/link"
+      rel="noreferrer"
+      style="display: none"
+    ></a>
+    <script>
+      let matched = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (matched) {
+        darkmode();
+      }
+      let randNo1 = Math.floor(Math.random() * 5),
+        randNo2 = Math.floor(Math.random() * 5);
+      randNo = randNo1 + randNo2;
+      document.getElementById("submi").disabled = true;
+      document.getElementById("submi").style.color = "gray";
+      document.getElementById(
+        "rand"
+      ).placeholder = `${randNo1} + ${randNo2} = ?`;
+      let rand = document.getElementById("rand");
+      rand.addEventListener("input", function () {
+        if (document.getElementById("rand").value == randNo) {
+          document.getElementById("submi").disabled = false;
+          document.getElementById("submi").style.color = "white";
+        } else {
+          document.getElementById("submi").style.color = "gray";
+        }
+      });
+    </script>
+  </body>
+</html>

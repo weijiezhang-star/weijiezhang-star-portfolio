@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>randomColorGenerator();</title>
+    <meta name="theme-color" content="#000">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="BsRcrQH_YwBW4zyBT2AexW2QIhoXcLCrtPoTWpZr7Bg" />
+    <meta name="Description" content="Get Stunning Colors for your project!"/>
+     <link rel="author" href="https://cdn.statically.io/gh/adithyapaib/adithyapai.com/27f1a882/img/adithya.webp"/>
+     <meta name="Keywords" content="adithyapai adithya pai Adithya AdithyaPai ADITHYAPAI ADITHYA adithyapaib paiadithya adithyapai.com www.adithyapai.com"/>
+    
+ <script src="/asset/js/fa.js"></script>
+</head>
+<style>
+    * {
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    body {
+        background: black;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+
+    .box {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
+        position: absolute;
+        padding: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    button {
+        color: #fff !important;
+        background: #ed3330;
+        padding: 20px;
+        border-radius: 5px;
+        outline: none;
+        display: inline-block;
+        border: none;
+        margin: 2px;
+        transition: all 0.4s ease 0s;
+        cursor: pointer;
+    }
+
+    button:active {
+        background: #434343;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+        transition: all 0.4s ease 0s;
+    }
+
+    .box input {
+        height: 30px;
+        width: fit-content;
+        max-width: 90vw;
+        font-size: 2em;
+        padding: 20px 0px 20px 0px;
+        border: none;
+        border-radius: 100px;
+        outline: none;
+        margin-bottom: 100px;
+        text-align: center;
+        background: rgba(63, 62, 62, 0.308);
+        color: rgb(255, 255, 255);
+        
+    }
+    a 
+    {
+        text-emphasis: none;
+        text-decoration: none;
+         color: rgb(255, 255, 255);
+         
+    
+    }
+    footer
+    {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 10px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+       width: 100%;
+        text-align: center;
+        
+    }
+    footer p 
+    {
+        
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <input id="p1"value="#000000" ></input>
+        <br>
+        <button onclick="clicked()">Random Color</button>
+        <button id="copy">Copy</button>
+    </div>
+    <footer>
+        <p> Made with ❤️ by <a href="#">Carlos Lee</a></p>
+    </footer>
+
+    <script>
+        function clicked() {
+            let c = "#" + Math.random().toString(16).substring(2, 8).toUpperCase();
+            console.log(c)
+            document.getElementById("p1").value = c;
+            var metaThemeColor = document.querySelector("meta[name=theme-color]");
+            metaThemeColor.setAttribute("content",c);
+           setTimeout(function(){ document.body.style.backgroundColor = c; }, 15);
+           document.getElementById("copy").innerHTML="Copy"
+           document.getElementById("copy").style.background = "#ed3330";
+      }
+        
+        let copy = document.getElementById("copy")
+             copy.onclick = function()
+             {
+                let s = document.getElementById("p1");
+                s.select();
+                document.getElementById("copy").innerHTML="Copied !"
+                document.getElementById("copy").style.color="#308E4A"
+                document.execCommand("copy");
+                window.getSelection().empty();
+                document.getElementById("copy").style.background="#3ACF3C";
+                
+             }
+    </script>
+   
+   
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth !important;
+  max-width: 100%;
+  cursor: url(/img/cursor.png), auto;
+}
+body {
+  width: 100vw;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 10;
+}
+.dark-mode {
+  background: #080808;
+  color: #fff;
+}
+.page1 {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  color: #fff;
+  background: #080808;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Raleway, sans-serif;
+}
+.page1 p {
+  z-index: 100;
+  position: relative;
+  font-size: 5vmin;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+#preloader {
+  background: #000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 10000000000;
+}
+#preloader path {
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 1000;
+  opacity: 10;
+  -webkit-animation: animate 4s linear;
+  animation: animate 4s linear;
+}
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1000;
+  }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1000;
+  }
+  90% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  100% {
+    opacity: 10;
+    fill: #fff;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1000;
+  }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1000;
+  }
+  90% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  100% {
+    opacity: 10;
+    fill: #fff;
+    stroke-dashoffset: 0;
+  }
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+.dark-mode::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e69c3;
+}
+.dark-mode::-webkit-scrollbar-thumb {
+  background: #3e69c3;
+}
+.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+.navbar {
+  background: #fff;
+}
+.dark-mode .navbar {
+  background: #080808;
+}
+.navbar .navbar-brand {
+  color: #000;
+  font-size: 2.1em;
+  -webkit-animation: title 5s ease-in forwards;
+  animation: title 5s ease-in forwards;
+}
+@-webkit-keyframes title {
+  from {
+    color: #0051ff;
+  }
+  to {
+    color: #000;
+  }
+}
+@keyframes title {
+  from {
+    color: #0051ff;
+  }
+  to {
+    color: #000;
+  }
+}
+.dark-mode .navbar .navbar-brand {
+  color: #fff;
+  -webkit-animation: darktitle 3s ease-in-out forwards;
+  animation: darktitle 3s ease-in-out forwards;
+}
+@-webkit-keyframes darktitle {
+  from {
+    color: #3e69c3;
+  }
+  to {
+    color: #fff;
+  }
+}
+@keyframes darktitle {
+  from {
+    color: #3e69c3;
+  }
+  to {
+    color: #fff;
+  }
+}
+.navbar .navbar-toggler {
+  border: 1px solid #000;
+  text-align: center;
+}
+.dark-mode .navbar .navbar-toggler {
+  border: 1px solid #fff;
+}
+.fa-bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-weight: lighter;
+  margin: 20%;
+}
+.dark-mode .fa-bars {
+  color: #fff;
+  margin: 20%;
+}
+.navbar .navbar-toggler:hover {
+  border-color: #3e69c3;
+}
+.dmb:hover {
+  color: #0275d8;
+}
+@media only screen and (max-width: 600px) {
+  .top h1 {
+    font-size: 2em;
+  }
+  .navbar .navbar-brand {
+    font-size: 1.8em;
+  }
+}
+.uc {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.uc:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #0275d8;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.uc:active:before,
+.uc:focus:before,
+.uc:hover:before {
+  left: 0;
+  right: 0;
+}
+.dmb {
+  font-size: 1.6em;
+  margin-left: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+.dark-mode::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e69c3;
+}
+.dark-mode::-webkit-scrollbar-thumb {
+  background: #3e69c3;
+}
+.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+.navbar {
+  background: #fff;
+}
+.dark-mode .navbar {
+  background: #080808;
+}
+.navbar .navbar-brand {
+  color: #000;
+  font-size: 2.1em;
+  -webkit-animation: title 5s ease-in forwards;
+  animation: title 5s ease-in forwards;
+}
+@keyframes title {
+  from {
+    color: #0051ff;
+  }
+  to {
+    color: #000;
+  }
+}
+.dark-mode .navbar .navbar-brand {
+  color: #fff;
+  -webkit-animation: darktitle 3s ease-in-out forwards;
+  animation: darktitle 3s ease-in-out forwards;
+}
+@keyframes darktitle {
+  from {
+    color: #3e69c3;
+  }
+  to {
+    color: #fff;
+  }
+}
+.navbar .navbar-toggler {
+  border: 1px solid #000;
+  text-align: center;
+}
+.dark-mode .navbar .navbar-toggler {
+  border: 1px solid #fff;
+}
+.fa-bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-weight: lighter;
+  margin: 20%;
+}
+.dark-mode .fa-bars {
+  color: #fff;
+  margin: 20%;
+}
+.navbar .navbar-toggler:hover {
+  border-color: #3e69c3;
+}
+.dmb:hover {
+  color: #0275d8;
+}
+@media only screen and (max-width: 600px) {
+  .top h1 {
+    font-size: 2em;
+  }
+  .navbar .navbar-brand {
+    font-size: 1.8em;
+  }
+}
+.uc {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.uc:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #0275d8;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.uc:active:before,
+.uc:focus:before,
+.uc:hover:before {
+  left: 0;
+  right: 0;
+}
+.about {
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
