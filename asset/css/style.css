@@ -599,8 +599,8 @@ canvas {
   background: linear-gradient(145deg, #cfcfcf, #f6f6f6);
   -webkit-box-shadow: 7px 7px 6px #c1c1c1, -7px -7px 6px #ffffff;
   box-shadow: 7px 7px 6px #c1c1c1, -7px -7px 6px #ffffff;
-  padding: 10px 8px 0px 8px;
-  border: #080808 4px solid;
+  /* padding: 10px 8px 0px 8px; */
+  border: rgb(188, 231, 251) 4px solid;
 }
 
 .slid1 .box1 .content {
